@@ -9,7 +9,7 @@ describe 'Articles feature', type: :feature, js: true do
       visit "erxtwo/articles"
       find("h1", text: 'Listing Articles')
       find("a#new-article").click
-      find("h1", "Bazoo")
+      find("h1", text: "Bazoo")
     end
   end
 end

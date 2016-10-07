@@ -26,4 +26,16 @@
 
 <br>
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to 'New Article', new_article_path, id: 'new-article' %>
+
+<%= javascript_tag do %>
+  $(function() {
+    console.log("loaded");
+    $("#new-article").click(function(e) {
+      console.log("clicked");
+      $("h1").html("Bazoo")
+      e.preventDefault();
+      return false;
+    })
+  })
+<% end %>

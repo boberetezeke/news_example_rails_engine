@@ -20,6 +20,7 @@ require 'rails_helper'
 
 module Erxtwo
   RSpec.describe ArticlesController, type: :controller do
+    routes { Erxtwo::Engine.routes }
 
     # This should return the minimal set of attributes required to create a valid
     # Article. As you add validations to Article, be sure to

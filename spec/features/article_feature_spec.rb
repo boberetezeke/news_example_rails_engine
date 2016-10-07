@@ -8,8 +8,8 @@ describe 'Articles feature', type: :feature, js: true do
     it 'can be configured via the Patient Type options' do
       visit "erxtwo/articles"
       find("h1", text: 'Listing Articles')
-      # find("a#new-article").click
-      # find("h1", "Bazoo")
+      find("a#new-article").click
+      find("h1", "Bazoo")
     end
   end
 end

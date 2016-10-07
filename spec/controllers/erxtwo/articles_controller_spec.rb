@@ -20,13 +20,14 @@ require 'rails_helper'
 
 module Erxtwo
   RSpec.describe ArticlesController, type: :controller do
-
+    routes { Erxtwo::Engine.routes }
+    
     # This should return the minimal set of attributes required to create a valid
     # Article. As you add validations to Article, be sure to
     # adjust the attributes here as well.
     let(:valid_attributes) {
       #skip("Add a hash of attributes valid for your model")
-      {title: 'title'}
+      {title: 'MyString', text: 'MyText'}
     }
 
     let(:invalid_attributes) {
@@ -42,10 +43,8 @@ module Erxtwo
     describe "GET #index" do
       it "assigns all articles as @articles" do
         article = Article.create! valid_attributes
-        puts "----------------- routes ---------------------------"
-        puts Rails.application.routes.routes.map { |r| r.path.spec.to_s }
         get :index #, params: {}, session: valid_session
-        expect(assigns(:articles)).to eq([article])
+        expect(assigns(:articles).to_a).to eq([article])
       end
     end
 =begin

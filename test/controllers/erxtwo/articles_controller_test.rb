@@ -3,13 +3,11 @@ require 'test_helper'
 module Erxtwo
   class ArticlesControllerTest < ActionController::TestCase
     setup do
-      @article = erxtwo_articles(:one)
       @routes = Engine.routes
     end
 
     test "should get index" do
-      puts "----------------- routes ---------------------------"
-      puts Rails.application.routes.routes.map { |r| r.path.spec.to_s }
+      Article.create!(title: 'title')
       get :index
       assert_response :success
       assert_not_nil assigns(:articles)

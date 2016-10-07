@@ -20,8 +20,9 @@ load 'rails/tasks/engine.rake'
 
 load 'rails/tasks/statistics.rake'
 
-# Rspec changes
 Bundler::GemHelper.install_tasks
+
+# Rspec changes
 
 Dir[File.join(File.dirname(__FILE__), 'tasks/**/*.rake')].each {|f| load f }
 
@@ -31,7 +32,7 @@ require 'rspec/core/rake_task'
 desc "Run all specs in spec directory (excluding plugin specs)"
 RSpec::Core::RakeTask.new(:spec => 'app:db:test:prepare')
 
-Bundler::GemHelper.install_tasks
+# Test::Unit changes
 
 require 'rake/testtask'
 

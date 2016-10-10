@@ -27,7 +27,7 @@ module Erxtwo
     # adjust the attributes here as well.
     let(:valid_attributes) {
       #skip("Add a hash of attributes valid for your model")
-      {title: 'MyString', text: 'MyText'}
+      {title: 'title', text: 'text'}
     }
 
     let(:invalid_attributes) {
@@ -42,7 +42,7 @@ module Erxtwo
 
     describe "GET #index" do
       it "assigns all articles as @articles" do
-        article = Article.create! valid_attributes
+        article = FactoryGirl.create(:erxtwo_article, valid_attributes)
         get :index #, params: {}, session: valid_session
         expect(assigns(:articles).to_a).to eq([article])
       end

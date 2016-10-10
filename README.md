@@ -1,4 +1,4 @@
-= News
+## News - Example Rails Engine with RSpec, FactoryGirl, and Capybara support
 
 This project is a sample app for a rails engine that relies on rspec, factory\_girl,
 and capybara-webkit. It is setup from the rails guide for engines. It is a mythical
@@ -14,7 +14,7 @@ included the rails guide as it was used to generate the articles spec.
 2. https://www.viget.com/articles/rails-engine-testing-with-rspec-capybara-and-factorygirl
 3. http://guides.rubyonrails.org/engines.html
 
-= Building this from scratch
+# Building this from scratch
 
 First you need to create the plugin.
 
@@ -90,7 +90,7 @@ The dummy application which is in test/dummy needs to exist at that path because
 it is hardcoded in the railtie gem. You can however delete the rest of the
 contents of the test directory.
 
-= Running a feature spec
+# Running a feature spec
 
 In this case, I wanted to make sure that I could include a javascript library 
 and use it in the within a feature spec, so I included jquery in the engine's

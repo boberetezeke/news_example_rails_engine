@@ -1,8 +1,0 @@
-= Erxtwo
-
-This project is a sample app for a rails engine that relies on rspec, factory\_girl,
-and capybara-webkit. It is setup from the rails guide for engines. It is a mythical
-news site that contains articles.
-
-It can run both Test::Unit tests and Rspec tests. The reason to include the Test::Unit
-tests is because that is how it is setup in the guide.

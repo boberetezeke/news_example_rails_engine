@@ -18,9 +18,9 @@ require 'rails_helper'
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
 
-module Erxtwo
+module News
   RSpec.describe ArticlesController, type: :controller do
-    routes { Erxtwo::Engine.routes }
+    routes { News::Engine.routes }
     
     # This should return the minimal set of attributes required to create a valid
     # Article. As you add validations to Article, be sure to
@@ -42,7 +42,7 @@ module Erxtwo
 
     describe "GET #index" do
       it "assigns all articles as @articles" do
-        article = FactoryGirl.create(:erxtwo_article, valid_attributes)
+        article = FactoryGirl.create(:news_article, valid_attributes)
         get :index #, params: {}, session: valid_session
         expect(assigns(:articles).to_a).to eq([article])
       end

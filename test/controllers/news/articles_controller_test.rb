@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module Erxtwo
+module News
   class ArticlesControllerTest < ActionController::TestCase
     setup do
       @routes = Engine.routes

@@ -1,6 +1,6 @@
-require_dependency "erxtwo/application_controller"
+require_dependency "news/application_controller"
 
-module Erxtwo
+module News
   class ArticlesController < ApplicationController
     before_action :set_article, only: [:show, :edit, :update, :destroy]
 

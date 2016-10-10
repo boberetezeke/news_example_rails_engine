@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "erxtwo/version"
+require "news/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "erxtwo"
-  s.version     = Erxtwo::VERSION
+  s.name        = "news"
+  s.version     = News::VERSION
   s.authors     = ["Steve Tuckner"]
   s.email       = ["stevetuckner@gmail.com"]
   s.homepage    = ""
-  s.summary     = "Summary of Erxtwo."
-  s.description = "Description of Erxtwo."
+  s.summary     = "Summary of News."
+  s.description = "Description of News."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]

@@ -1,3 +1,3 @@
-Erxtwo::Engine.routes.draw do
+News::Engine.routes.draw do
   resources :articles
 end

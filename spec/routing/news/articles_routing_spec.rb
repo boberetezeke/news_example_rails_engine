@@ -1,11 +1,11 @@
 require "rails_helper"
 
-module Erxtwo
+module News
   RSpec.describe ArticlesController, type: :routing do
     describe "routing" do
 =begin
       it "routes to #index" do
-        # expect(:get => "/erxtwo/articles").to route_to("articles#index")
+        # expect(:get => "/news/articles").to route_to("articles#index")
       end
 
       it "routes to #new" do

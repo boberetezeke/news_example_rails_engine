@@ -1,6 +1,6 @@
-module Erxtwo
+module News
   class Engine < ::Rails::Engine
-    isolate_namespace Erxtwo
+    isolate_namespace News
     
     config.generators do |g|
       g.test_framework :rspec, :fixture => false

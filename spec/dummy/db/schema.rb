@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20161007161513) do
 
-  create_table "erxtwo_articles", force: :cascade do |t|
+  create_table "news_articles", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at", null: false

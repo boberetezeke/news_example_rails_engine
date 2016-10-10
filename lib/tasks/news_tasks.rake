@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :erxtwo do
+# task :news do
 #   # Task goes here
 # end

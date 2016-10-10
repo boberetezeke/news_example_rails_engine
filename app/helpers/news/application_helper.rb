@@ -1,4 +1,4 @@
-module Erxtwo
+module News
   module ApplicationHelper
   end
 end

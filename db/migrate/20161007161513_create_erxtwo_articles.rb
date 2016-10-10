@@ -1,6 +1,6 @@
-class CreateErxtwoArticles < ActiveRecord::Migration
+class CreateNewsArticles < ActiveRecord::Migration
   def change
-    create_table :erxtwo_articles do |t|
+    create_table :news_articles do |t|
       t.string :title
       t.text :text
 
